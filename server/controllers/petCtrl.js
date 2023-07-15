@@ -73,4 +73,8 @@ module.exports = {
     petInfoID = id;
     res.sendStatus(200);
   },
+  resetPet: (req, res) => {
+    petInfoID = 0
+    res.sendStatus(200);
+  }
 };

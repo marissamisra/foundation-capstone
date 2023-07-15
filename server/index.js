@@ -8,7 +8,7 @@ const {
   createUser,
   getUser,
 } = require("./controllers/userCtrl");
-const { createPet, getPetInfo, getUsersPets, storePetInfoID } = require("./controllers/petCtrl");
+const { createPet, getPetInfo, getUsersPets, storePetInfoID, resetPet } = require("./controllers/petCtrl");
 const { addFriend, removeFriend } = require("./controllers/packCtrl");
 const { updateStatus } = require("./controllers/statusCtrl");
 const { seedData } = require("./controllers/dbCtrl");
@@ -23,7 +23,7 @@ app.post("/data/seed", seedData);
 app.get("/user/", getUser);
 app.post("/user/create", createUser);
 app.post("/user/login", login);
-app.delete("/user/logout", logout);
+app.delete("/user/logout", logout, resetPet);
 
 app.get("/pets", getUsersPets);
 app.get("/pet", getPetInfo);
