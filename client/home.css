@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+  color: #1B998B;
+  background-color: #2D3047;
+}
+
+#welcome {
+  margin: 20px;
+  display: flex;
+}
+
+#pets-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  border-top: 1px solid #ED217C;
+  margin-top: 10px;
+}
+
+#my-pets {
+  display: flex;
+  flex-direction: column;
+}
+
+#pets-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+
+.pet-list-item {
+  display: flex;
+  max-width: 200px;
+  margin: 5px;
+}
+
+.pet {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#pet-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+#create-pet {
+  display: flex;
+  flex-direction: column;
+    border: solid 1px #ED217C
+}
+
+#logo, #pet-name {
+    font-family: 'Courgette', cursive;
+    color: #ED217C;
+    margin-bottom: 15px;
+}
+
+p {
+  margin: 5px;
+}
+
+button, .button {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.text-box {
+    width: 200px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid #1B998B;
+  } 
+
+.text-box::placeholder {
+  color: #F7F4F3;
+  opacity: .5;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./create-user.css">
+    <title>BarkWoof! Create an account</title>
+</head>
+<body>
+    <form id="new-user-form">
+        <input class='text-box'id=username-input type="text" placeholder="Enter a username" />
+        <input class='text-box' id="password-input" type="password" placeholder="Create a Password" />
+        <input id="submit-btn" class="button" type="submit" />
+    </form>
+    
+    <section id="message"></section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./create-user.js"></script>
+</body>
+</html>
